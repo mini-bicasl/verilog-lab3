@@ -62,20 +62,20 @@ Implement the timing constraint enforcer.  This module is purely combinational
 
 ### RTL Modules
 
-- [ ] `timing_ctrl`: RTL implementation (`rtl/timing_ctrl.v`)
+- [x] `timing_ctrl`: RTL implementation (`rtl/timing_ctrl.v`)
 
 ### Testbenches
 
-- [ ] `timing_ctrl`: Testbench (`tb/timing_ctrl_tb.v`)
+- [x] `timing_ctrl`: Testbench (`tb/timing_ctrl_tb.v`)
 
 ### Documentation
 
-- [ ] `timing_ctrl`: Module documentation (`docs/timing_ctrl.md`)
+- [x] `timing_ctrl`: Module documentation (`docs/timing_ctrl.md`)
 
 ### Verification / Coverage
 
-- [ ] `timing_ctrl`: tRCD, tRP, tRAS, tRC, tRRD_S, tRRD_L, tCCD_S, tCCD_L, tFAW
-- [ ] `timing_ctrl`: tWTR_S, tWTR_L, tRTP, tWR
+- [x] `timing_ctrl`: tRCD, tRP, tRAS, tRC, tRRD_S, tRRD_L, tCCD_S, tCCD_L, tFAW
+- [x] `timing_ctrl`: tWTR_S, tWTR_L, tRTP, tWR
 
 ---
 

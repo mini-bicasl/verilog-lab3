@@ -1,0 +1,59 @@
+VCD info: dumpfile results/phase-ddr4-timing/timing_ctrl.vcd opened for output.
+PASS T1: OP ok while in reset
+PASS T1: unters 0 after reset
+PASS T2: RD_S: trigger ACT ok
+PASS T2:  immediately blocked
+PASS T2: ly P_TRRD_S-1 cycles
+PASS T2:  after tRRD_S cycles
+PASS T3: RD_L: trigger ACT ok
+PASS T3:  immediately blocked
+PASS T3: ly P_TRRD_L-1 cycles
+PASS T3:  after tRRD_L cycles
+PASS T4:        tFAW: ACT1 ok
+PASS T4: (all 4 slots active)
+PASS T4:  oldest slot expires
+PASS T5: CCD_S: trigger WR ok
+PASS T5:  immediately blocked
+PASS T5: ly P_TCCD_S-1 cycles
+PASS T5:  after tCCD_S cycles
+PASS T6: CCD_L: trigger WR ok
+PASS T6:  immediately blocked
+PASS T6: ly P_TCCD_L-1 cycles
+PASS T6:  after tCCD_L cycles
+PASS T7: WTR_S: trigger WR ok
+PASS T7: ely blocked after WR
+PASS T7: ly P_TWTR_S-1 cycles
+PASS T7:  after tWTR_S cycles
+PASS T8: WTR_L: trigger WR ok
+PASS T8: ely blocked after WR
+PASS T8: ly P_TWTR_L-1 cycles
+PASS T8:  after tWTR_L cycles
+PASS T9: tRCD: trigger ACT ok
+PASS T9: ly blocked after ACT
+PASS T9: ctly P_TRCD-1 cycles
+PASS T9: ed after tRCD cycles
+PASS T10:    tRP: first ACT ok
+PASS T10: trc/faw all expired)
+PASS T10: ly blocked after PRE
+PASS T10: actly P_TRP-1 cycles
+PASS T10: ked after tRP cycles
+PASS T11:         tRAS: ACT ok
+PASS T11: ly blocked after ACT
+PASS T11: ctly P_TRAS-1 cycles
+PASS T11: ed after tRAS cycles
+PASS T12:    tRC: first ACT ok
+PASS T12:  immediately blocked
+PASS T12: actly P_TRC-1 cycles
+PASS T12: ked after tRC cycles
+PASS T13: (fresh bank, trcd=0)
+PASS T13: ely blocked after RD
+PASS T13: ctly P_TRTP-1 cycles
+PASS T13: ed after tRTP cycles
+PASS T14: (fresh bank, trcd=0)
+PASS T14: ely blocked after WR
+PASS T14: actly P_TWR-1 cycles
+PASS T14: ked after tWR cycles
+--------------------------------------------
+timing_ctrl_tb: 54 PASSED, 0 FAILED
+--------------------------------------------
+tb/timing_ctrl_tb.v:476: $finish called at 3716000 (1ps)
