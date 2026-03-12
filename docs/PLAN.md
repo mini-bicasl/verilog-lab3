@@ -12,23 +12,23 @@ other module depends on correct ECC data.
 
 ### RTL Modules
 
-- [ ] `ecc_encoder`: RTL implementation (`rtl/ecc_encoder.v`)
-- [ ] `ecc_decoder`: RTL implementation (`rtl/ecc_decoder.v`)
+- [x] `ecc_encoder`: RTL implementation (`rtl/ecc_encoder.v`)
+- [x] `ecc_decoder`: RTL implementation (`rtl/ecc_decoder.v`)
 
 ### Testbenches
 
-- [ ] `ecc_encoder`: Testbench (`tb/ecc_encoder_tb.v`)
-- [ ] `ecc_decoder`: Testbench (`tb/ecc_decoder_tb.v`)
+- [x] `ecc_encoder`: Testbench (`tb/ecc_encoder_tb.v`)
+- [x] `ecc_decoder`: Testbench (`tb/ecc_decoder_tb.v`)
 
 ### Documentation
 
-- [ ] `ecc_encoder`: Module documentation (`docs/ecc_encoder.md`)
-- [ ] `ecc_decoder`: Module documentation (`docs/ecc_decoder.md`)
+- [x] `ecc_encoder`: Module documentation (`docs/ecc_encoder.md`)
+- [x] `ecc_decoder`: Module documentation (`docs/ecc_decoder.md`)
 
 ### Verification / Coverage
 
-- [ ] `ecc_encoder`: All 64 single-bit injection patterns pass
-- [ ] `ecc_decoder`: All single-bit errors corrected; all double-bit errors detected
+- [x] `ecc_encoder`: All 64 single-bit injection patterns pass
+- [x] `ecc_decoder`: All single-bit errors corrected; all double-bit errors detected
 
 ---
 
