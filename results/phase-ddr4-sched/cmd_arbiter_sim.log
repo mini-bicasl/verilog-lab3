@@ -1,0 +1,43 @@
+VCD info: dumpfile results/phase-ddr4-sched/cmd_arbiter.vcd opened for output.
+PASS T1:             reset: arb_valid=0
+PASS T1:              reset: rd_ready=0
+PASS T1:              reset: wr_ready=0
+PASS T1:          reset: arb_is_write=0
+PASS T2: nly: arb_valid=1 after 1 cycle
+PASS T2:        rd-only: arb_is_write=0
+PASS T2:      rd-only: arb_addr correct
+PASS T2:        rd-only: arb_id correct
+PASS T2:       rd-only: rd_ready pulsed
+PASS T2: arb_valid cleared after accept
+PASS T3:           wr-only: arb_valid=1
+PASS T3:        wr-only: arb_is_write=1
+PASS T3:      wr-only: arb_addr correct
+PASS T3:       wr-only: wr_ready pulsed
+PASS T3: wr-only: rd_ready not asserted
+PASS T4: h-valid RD_PRI=1: read granted
+PASS T4:  both-valid: rd_addr forwarded
+PASS T4:    both-valid: rd_ready pulsed
+PASS T4: oth-valid: wr_ready NOT pulsed
+PASS T4: both-valid: write granted next
+PASS T4: th-valid: is_write=1 for write
+PASS T4:  both-valid: wr_addr forwarded
+PASS T5: _req: no grant while ref_req=1
+PASS T5:      ref_req: rd_ready stays 0
+PASS T5: ref_req released: grant issued
+PASS T5:      ref_req released: is read
+PASS T6: ckpressure: arb_valid asserted
+PASS T6: kpressure: arb_valid held high
+PASS T6: kpressure: arb_valid held high
+PASS T6: kpressure: arb_valid held high
+PASS T6: _valid deasserted after accept
+PASS T7:     pipeline req1: arb_valid=1
+PASS T7:    pipeline req1: addr correct
+PASS T7:     pipeline req2: arb_valid=1
+PASS T7:    pipeline req2: addr correct
+PASS T8:  in-flight: arb_valid asserted
+PASS T8: +ref_req: arb_valid still high
+PASS T8: n-flight: cleared after accept
+--------------------------------------------
+cmd_arbiter_tb: 38 PASSED, 0 FAILED
+--------------------------------------------
+tb/cmd_arbiter_tb.v:363: $finish called at 376000 (1ps)

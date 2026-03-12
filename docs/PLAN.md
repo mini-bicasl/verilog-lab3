@@ -105,24 +105,24 @@ Implement the timing constraint enforcer.  This module is purely combinational
 
 ### RTL Modules
 
-- [ ] `cmd_arbiter`: RTL implementation (`rtl/cmd_arbiter.v`)
-- [ ] `cmd_scheduler`: RTL implementation (`rtl/cmd_scheduler.v`)
+- [x] `cmd_arbiter`: RTL implementation (`rtl/cmd_arbiter.v`)
+- [x] `cmd_scheduler`: RTL implementation (`rtl/cmd_scheduler.v`)
 
 ### Testbenches
 
-- [ ] `cmd_arbiter`: Testbench (`tb/cmd_arbiter_tb.v`)
-- [ ] `cmd_scheduler`: Testbench (`tb/cmd_scheduler_tb.v`)
+- [x] `cmd_arbiter`: Testbench (`tb/cmd_arbiter_tb.v`)
+- [x] `cmd_scheduler`: Testbench (`tb/cmd_scheduler_tb.v`)
 
 ### Documentation
 
-- [ ] `cmd_arbiter`: Module documentation (`docs/cmd_arbiter.md`)
-- [ ] `cmd_scheduler`: Module documentation (`docs/cmd_scheduler.md`)
+- [x] `cmd_arbiter`: Module documentation (`docs/cmd_arbiter.md`)
+- [x] `cmd_scheduler`: Module documentation (`docs/cmd_scheduler.md`)
 
 ### Verification / Coverage
 
-- [ ] `cmd_scheduler`: Open-row hit generates READ/WRITE without ACT
-- [ ] `cmd_scheduler`: Row miss generates PRECHARGE -> ACTIVATE -> READ/WRITE
-- [ ] `cmd_scheduler`: Refresh preempts normal traffic
+- [x] `cmd_scheduler`: Open-row hit generates READ/WRITE without ACT
+- [x] `cmd_scheduler`: Row miss generates PRECHARGE -> ACTIVATE -> READ/WRITE
+- [x] `cmd_scheduler`: Refresh preempts normal traffic
 
 ---
 
