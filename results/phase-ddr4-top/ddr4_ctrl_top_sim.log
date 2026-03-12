@@ -1,0 +1,24 @@
+VCD info: dumpfile results/phase-ddr4-top/ddr4_ctrl_top.vcd opened for output.
+PASS T1:  reset: bvalid=0
+PASS T1:  reset: rvalid=0
+PASS T1:   ddr4_reset_n=0
+PASS T1:        awready=1
+PASS T1:        arready=1
+PASS T1:   ddr4_reset_n=1
+PASS T1:            cke=1
+PASS T2: rite: ACT issued
+PASS T2: write: WR issued
+PASS T2:    write: bvalid
+PASS T2:     write: bid=1
+PASS T2:      write: OKAY
+PASS T3:  read: RD issued
+PASS T3:      read: rid=2
+PASS T3: d: rdata correct
+PASS T3:       read: OKAY
+PASS T4:  ecc-dbe: SLVERR
+PASS T4:   ecc-dbe: rid=3
+PASS T5: h: ref_req fires
+--------------------------------------------
+ddr4_ctrl_top_tb: 19 PASSED, 0 FAILED
+--------------------------------------------
+tb/ddr4_ctrl_top_tb.v:590: $finish called at 1236000 (1ps)
