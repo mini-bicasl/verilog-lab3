@@ -1,0 +1,22 @@
+VCD info: dumpfile results/phase-ddr4-refresh/refresh_ctrl.vcd opened for output.
+PASS T1:                 reset: ref_req=0
+PASS T1:               reset: ref_issue=0
+PASS T1:               reset: ref_stall=0
+PASS T1:              reset: ref_active=0
+PASS T2: ab: ref_req asserted after tREFI
+PASS T3:  ref_issue fires when banks idle
+PASS T4: _stall asserted at start of tRFC
+PASS T4: b: ref_stall lasts P_TRFC cycles
+PASS T5:    REFab: ref_stall=0 after tRFC
+PASS T5:   REFab: ref_active=0 after tRFC
+PASS T5:      REFab: ref_req=0 after tRFC
+PASS T6: nd cycle: ref_req asserted again
+PASS T7:  ref_req within tREFI/2+5 cycles
+PASS T8:  REFpb: all banks refreshed once
+PASS T8: order {bg,bk} = 0..TOTAL_BANKS-1
+PASS T9: ref_req asserted with banks busy
+PASS T9: issue NOT fired while banks busy
+PASS T9: f_issue fires once banks go idle
+
+=== Simulation complete: 18 passed, 0 failed ===
+tb/refresh_ctrl_tb.v:320: $finish called at 2646000 (1ps)
