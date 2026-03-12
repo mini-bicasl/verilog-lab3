@@ -1,0 +1,41 @@
+VCD info: dumpfile results/phase-ddr4-bank/bank_fsm.vcd opened for output.
+PASS T1:    reset: state=IDLE
+PASS T1:   reset: fsm_ready=1
+PASS T1:  reset: row_active=0
+PASS T1:    reset: open_row=0
+PASS T2: CT: state=ACTIVATING
+PASS T2: CT: open_row latched
+PASS T2: ost-ACT: fsm_ready=0
+PASS T3:     ACTIVATING dwell
+PASS T3: IVATING: fsm_ready=0
+PASS T3:     ACTIVATING dwell
+PASS T3: IVATING: fsm_ready=0
+PASS T3: r tRCD: state=ACTIVE
+PASS T3:  ACTIVE: fsm_ready=1
+PASS T3: ACTIVE: row_active=1
+PASS T4: fied on ACTIVE entry
+PASS T4: : state stays ACTIVE
+PASS T4: AS: row still active
+PASS T5: state remains ACTIVE
+PASS T5: state remains ACTIVE
+PASS T6: satisfied: tras_ok=1
+PASS T6: E: state=PRECHARGING
+PASS T6: HARGING: fsm_ready=0
+PASS T6: ARGING: row_active=0
+PASS T7:    PRECHARGING dwell
+PASS T7: HARGING: fsm_ready=0
+PASS T7:    PRECHARGING dwell
+PASS T7: HARGING: fsm_ready=0
+PASS T8: fter tRP: state=IDLE
+PASS T8:    IDLE: fsm_ready=1
+PASS T8:   IDLE: row_active=0
+PASS T9: ycle: reached ACTIVE
+PASS T9: le: open_row updated
+PASS T9: d cycle: PRECHARGING
+PASS T9:  cycle: back to IDLE
+PASS T10: ble across RD bursts
+PASS T10: IVE across RD bursts
+--------------------------------------------
+bank_fsm_tb: 36 PASSED, 0 FAILED
+--------------------------------------------
+tb/bank_fsm_tb.v:327: $finish called at 376000 (1ps)
