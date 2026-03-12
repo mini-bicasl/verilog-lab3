@@ -130,21 +130,21 @@ Implement the timing constraint enforcer.  This module is purely combinational
 
 ### RTL Modules
 
-- [ ] `axi4_slave`: RTL implementation (`rtl/axi4_slave.v`)
+- [x] `axi4_slave`: RTL implementation (`rtl/axi4_slave.v`)
 
 ### Testbenches
 
-- [ ] `axi4_slave`: Testbench (`tb/axi4_slave_tb.v`)
+- [x] `axi4_slave`: Testbench (`tb/axi4_slave_tb.v`)
 
 ### Documentation
 
-- [ ] `axi4_slave`: Module documentation (`docs/axi4_slave.md`)
+- [x] `axi4_slave`: Module documentation (`docs/axi4_slave.md`)
 
 ### Verification / Coverage
 
-- [ ] `axi4_slave`: Single write then read round-trip
-- [ ] `axi4_slave`: Out-of-order IDs; back-pressure on WREADY/ARREADY
-- [ ] `axi4_slave`: SLVERR on double-bit ECC error
+- [x] `axi4_slave`: Single write then read round-trip
+- [x] `axi4_slave`: Out-of-order IDs; back-pressure on WREADY/ARREADY
+- [x] `axi4_slave`: SLVERR on double-bit ECC error
 
 ---
 
