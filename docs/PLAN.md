@@ -38,20 +38,20 @@ Implement the per-bank state machine; used by the scheduler in later phases.
 
 ### RTL Modules
 
-- [ ] `bank_fsm`: RTL implementation (`rtl/bank_fsm.v`)
+- [x] `bank_fsm`: RTL implementation (`rtl/bank_fsm.v`)
 
 ### Testbenches
 
-- [ ] `bank_fsm`: Testbench (`tb/bank_fsm_tb.v`)
+- [x] `bank_fsm`: Testbench (`tb/bank_fsm_tb.v`)
 
 ### Documentation
 
-- [ ] `bank_fsm`: Module documentation (`docs/bank_fsm.md`)
+- [x] `bank_fsm`: Module documentation (`docs/bank_fsm.md`)
 
 ### Verification / Coverage
 
-- [ ] `bank_fsm`: All state transitions (IDLE->ACTIVATING->ACTIVE->PRECHARGING->IDLE)
-- [ ] `bank_fsm`: tRAS enforcement; illegal transitions blocked
+- [x] `bank_fsm`: All state transitions (IDLE->ACTIVATING->ACTIVE->PRECHARGING->IDLE)
+- [x] `bank_fsm`: tRAS enforcement; illegal transitions blocked
 
 ---
 
