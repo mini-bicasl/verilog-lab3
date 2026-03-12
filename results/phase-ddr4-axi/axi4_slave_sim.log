@@ -1,0 +1,51 @@
+VCD info: dumpfile results/phase-ddr4-axi/axi4_slave.vcd opened for output.
+PASS T1:                reset: bvalid=0
+PASS T1:                reset: rvalid=0
+PASS T1:              reset: wr_valid=0
+PASS T1:              reset: rd_valid=0
+PASS T1:          post-reset: awready=1
+PASS T1:          post-reset: arready=1
+PASS T1: eset: wready=0 (no AW pending)
+PASS T2: te: wready=1 after AW accepted
+PASS T2:  awready=0 while waiting for W
+PASS T2: e: wr_valid=1 after W accepted
+PASS T2:         write: wr_addr correct
+PASS T2: bvalid=1 after arbiter accepts
+PASS T2:              write: bresp=OKAY
+PASS T2:    write: wr_data_valid pulsed
+PASS T2:         write: wr_data correct
+PASS T2:   write: bvalid=0 after bready
+PASS T2:  write: awready=1 back in IDLE
+PASS T3: : rd_valid=1 after AR accepted
+PASS T3:          read: rd_addr correct
+PASS T3:          read: rd_data_ready=1
+PASS T3:      read: rd_valid deasserted
+PASS T3:                 read: rvalid=1
+PASS T3:            read: rdata correct
+PASS T3:               read: rresp=OKAY
+PASS T3:                  read: rlast=1
+PASS T3:    read: rvalid=0 after rready
+PASS T3:   read: arready=1 back in IDLE
+PASS T4:              write-id: bid=0xA
+PASS T4:             write-id: bvalid=1
+PASS T5:               read-id: rid=0xB
+PASS T5:              read-id: rvalid=1
+PASS T6:       b-backpressure: bvalid=1
+PASS T6:    b-backpressure: bvalid held
+PASS T6:    b-backpressure: bvalid held
+PASS T6:    b-backpressure: bvalid held
+PASS T6:    b-backpressure: bvalid held
+PASS T6: ressure: bvalid=0 after accept
+PASS T7:       r-backpressure: rvalid=1
+PASS T7:    r-backpressure: rvalid held
+PASS T7:    r-backpressure: rvalid held
+PASS T7:    r-backpressure: rvalid held
+PASS T7:    r-backpressure: rvalid held
+PASS T7: ressure: rvalid=0 after accept
+PASS T8:               slverr: rvalid=1
+PASS T8:           slverr: rresp=SLVERR
+PASS T8:            slverr: rid correct
+--------------------------------------------
+axi4_slave_tb: 46 PASSED, 0 FAILED
+--------------------------------------------
+tb/axi4_slave_tb.v:543: $finish called at 486000 (1ps)

@@ -1,0 +1,12 @@
+{
+  "module": "axi4_slave",
+  "rtl_done": true,
+  "tb_done": true,
+  "doc_done": true,
+  "simulation_passed": true,
+  "coverage_completed": true,
+  "coverage_percentage": 90,
+  "plan_item_completed": true,
+  "error_summary": "",
+  "sim_log": "results/phase-ddr4-axi/axi4_slave_sim.log"
+}
