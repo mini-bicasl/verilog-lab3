@@ -83,21 +83,21 @@ Implement the timing constraint enforcer.  This module is purely combinational
 
 ### RTL Modules
 
-- [ ] `refresh_ctrl`: RTL implementation (`rtl/refresh_ctrl.v`)
+- [x] `refresh_ctrl`: RTL implementation (`rtl/refresh_ctrl.v`)
 
 ### Testbenches
 
-- [ ] `refresh_ctrl`: Testbench (`tb/refresh_ctrl_tb.v`)
+- [x] `refresh_ctrl`: Testbench (`tb/refresh_ctrl_tb.v`)
 
 ### Documentation
 
-- [ ] `refresh_ctrl`: Module documentation (`docs/refresh_ctrl.md`)
+- [x] `refresh_ctrl`: Module documentation (`docs/refresh_ctrl.md`)
 
 ### Verification / Coverage
 
-- [ ] `refresh_ctrl`: REFab issued at tREFI intervals
-- [ ] `refresh_ctrl`: tRFC stall observed after every refresh
-- [ ] `refresh_ctrl`: REFpb mode cycles through all banks
+- [x] `refresh_ctrl`: REFab issued at tREFI intervals
+- [x] `refresh_ctrl`: tRFC stall observed after every refresh
+- [x] `refresh_ctrl`: REFpb mode cycles through all banks
 
 ---
 
