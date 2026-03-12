@@ -1,0 +1,55 @@
+VCD info: dumpfile results/phase-ddr4-sched/cmd_scheduler.vcd opened for output.
+PASS T1:            reset: dram_valid=0
+PASS T1:   reset: arb_ready=1 (in IDLE)
+PASS T1:              reset: tc_cmd=NOP
+PASS T2:   miss: tc_cmd=ACT after latch
+PASS T2:     miss: ACT issued (tc_ok=1)
+PASS T2:             miss: dram_cmd=ACT
+PASS T2:        miss: dram_bank_group=0
+PASS T2:              miss: dram_bank=0
+PASS T2:    miss: dram_row_addr correct
+PASS T2:      miss: tc_cmd=RD after ACT
+PASS T2:                miss: RD issued
+PASS T2:              miss: dram_cmd=RD
+PASS T2:    miss: dram_col_addr correct
+PASS T2: ss: back to IDLE (arb_ready=1)
+PASS T2:     miss: dram_valid=0 in IDLE
+PASS T3: t: tc_cmd=RD directly (no ACT)
+PASS T3:               hit: dram_cmd=RD
+PASS T3:  hit: dram_valid=1 immediately
+PASS T3:              hit: back to IDLE
+PASS T4:     conflict: tc_cmd=PRE first
+PASS T4:           conflict: PRE issued
+PASS T4:         conflict: dram_cmd=PRE
+PASS T4: conflict: tc_cmd=ACT after PRE
+PASS T4:         conflict: dram_cmd=ACT
+PASS T4: nflict: new row address in ACT
+PASS T4:  conflict: tc_cmd=WR after ACT
+PASS T4:          conflict: dram_cmd=WR
+PASS T4:     conflict: col_addr correct
+PASS T4:         conflict: back to IDLE
+PASS T5:     stall: tc_cmd=ACT proposed
+PASS T5:  stall: dram_valid=0 (tc_ok=0)
+PASS T5: ll stalled after 2 more cycles
+PASS T5:        stall: tc_cmd still ACT
+PASS T5: leased: ACT issues immediately
+PASS T5:        stall released: cmd=ACT
+PASS T5:          stall: RD follows ACT
+PASS T5:            stall: back to IDLE
+PASS T6: -ref: row opened, back to IDLE
+PASS T6:        ref_issue: dram_valid=1
+PASS T6:        ref_issue: dram_cmd=REF
+PASS T6:          ref_issue: tc_cmd=REF
+PASS T6:         post-ref: dram_valid=0
+PASS T6:   post-ref: arb_ready=1 (IDLE)
+PASS T6: T required again (row cleared)
+PASS T7:   ref_req: arb_ready=0 blocked
+PASS T7:  ref_req released: arb_ready=1
+PASS T8: nk: bank(3,0) hit -> direct RD
+PASS T8: ti-bank: back to IDLE after RD
+PASS T8: nk: bank(3,1) hit -> direct WR
+PASS T8: ti-bank: back to IDLE after WR
+--------------------------------------------
+cmd_scheduler_tb: 50 PASSED, 0 FAILED
+--------------------------------------------
+tb/cmd_scheduler_tb.v:392: $finish called at 406000 (1ps)
