@@ -1,0 +1,7 @@
+# Icarus Verilog build artifacts
+build/*.out
+build/*.vvp
+
+# OS artifacts
+.DS_Store
+Thumbs.db

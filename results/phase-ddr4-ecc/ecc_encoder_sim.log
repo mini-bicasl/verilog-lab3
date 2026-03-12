@@ -1,0 +1,16 @@
+VCD info: dumpfile results/phase-ddr4-ecc/ecc_encoder.vcd opened for output.
+PASS T1: d=0 => cb=8'h00
+PASS T2: d=all1s => cb=8'hFF
+PASS T3a: d=0xDEADBEEFCAFEBABE cb=0x3a
+PASS T3b: d=0x0000000000000001 cb=0x83
+PASS T3c: d=0x8000000000000000 cb=0xc7
+PASS T4: enc_word_out = {enc_check_out, enc_data_in}
+Running 64 single-bit data pattern checks...
+PASS T5: all 64 single-bit patterns match reference model
+PASS T6: overall parity of encoded all-zero word is 0
+PASS T7a: d=0x5555555555555555 cb=8'h55
+PASS T7b: d=0xAAAAAAAAAAAAAAAA cb=8'haa
+--------------------------------------------
+ecc_encoder_tb: 73 PASSED, 0 FAILED
+--------------------------------------------
+tb/ecc_encoder_tb.v:207: $finish called at 73000 (1ps)
