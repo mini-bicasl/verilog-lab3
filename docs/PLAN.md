@@ -152,20 +152,20 @@ Implement the timing constraint enforcer.  This module is purely combinational
 
 ### RTL Modules
 
-- [ ] `phy_if`: RTL implementation (`rtl/phy_if.v`)
+- [x] `phy_if`: RTL implementation (`rtl/phy_if.v`)
 
 ### Testbenches
 
-- [ ] `phy_if`: Testbench (`tb/phy_if_tb.v`)
+- [x] `phy_if`: Testbench (`tb/phy_if_tb.v`)
 
 ### Documentation
 
-- [ ] `phy_if`: Module documentation (`docs/phy_if.md`)
+- [x] `phy_if`: Module documentation (`docs/phy_if.md`)
 
 ### Verification / Coverage
 
-- [ ] `phy_if`: DQ tristate direction control
-- [ ] `phy_if`: DQS pre-amble / post-amble waveforms
+- [x] `phy_if`: DQ tristate direction control
+- [x] `phy_if`: DQS pre-amble / post-amble waveforms
 
 ---
 

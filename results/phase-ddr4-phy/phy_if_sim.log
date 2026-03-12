@@ -1,0 +1,71 @@
+VCD info: dumpfile results/phase-ddr4-phy/phy_if.vcd opened for output.
+PASS T1:             reset: act_n=1 (NOP)
+PASS T1:             reset: ras_n=1 (NOP)
+PASS T1:             reset: cas_n=1 (NOP)
+PASS T1:              reset: we_n=1 (NOP)
+PASS T1:            reset: dq_oe=0 (Hi-Z)
+PASS T1:           reset: dqs_oe=0 (Hi-Z)
+PASS T1:                 reset: wl_done=0
+PASS T1:                   reset: DQ=Hi-Z
+PASS T1:                reset: DQS_p=Hi-Z
+PASS T2:                     ACT: act_n=0
+PASS T2:                  ACT: ba latched
+PASS T2:                  ACT: bg latched
+PASS T2:                      RD: act_n=1
+PASS T2:                      RD: cas_n=0
+PASS T2:                       RD: we_n=1
+PASS T2:                      WR: act_n=1
+PASS T2:                      WR: cas_n=0
+PASS T2:                       WR: we_n=0
+PASS T2:                     PRE: act_n=1
+PASS T2:                     PRE: ras_n=0
+PASS T2:                     PRE: cas_n=1
+PASS T2:                      PRE: we_n=0
+PASS T2:                     REF: act_n=1
+PASS T2:                     REF: ras_n=0
+PASS T2:                     REF: cas_n=0
+PASS T2:                      REF: we_n=1
+PASS T2:                     NOP: act_n=1
+PASS T2:                     NOP: ras_n=1
+PASS T2:                     NOP: cas_n=1
+PASS T2:                      NOP: we_n=1
+PASS T3:  dq_oe still 0 (CWL not expired)
+PASS T3: dqs_oe still 0 (CWL not expired)
+PASS T3: er CWL+PRE: dq_oe=1 (DQ driving)
+PASS T3:  CWL+PRE: dqs_oe=1 (DQS driving)
+PASS T3: s driven (not Hi-Z) during write
+PASS T4: mble: DQS_p[0]=0 (pre-amble low)
+PASS T4: amble: DQS_n[0]=1 (differential)
+PASS T5: t cy0: DQS_p[0]=1 (first toggle)
+PASS T5:            burst cy1: DQS_p[0]=0
+PASS T5:            burst cy2: DQS_p[0]=1
+PASS T6: ble: DQS_p[0]=0 (post-amble low)
+PASS T6: amble: DQS_n[0]=1 (differential)
+PASS T6: pre) - toggle(burst) - low(post)
+PASS T6:  after postamble: dq_oe=0 (Hi-Z)
+PASS T6: after postamble: dqs_oe=0 (Hi-Z)
+PASS T6:          DQ bus Hi-Z after write
+PASS T6:           DQS_p Hi-Z after write
+PASS T7: D in progress: dq_oe=0 (DQ Hi-Z)
+PASS T7: D in progress: dq_oe=0 (DQ Hi-Z)
+PASS T7: D in progress: dq_oe=0 (DQ Hi-Z)
+PASS T7: D in progress: dq_oe=0 (DQ Hi-Z)
+PASS T8:    read capture: rd_data_valid=1
+PASS T8: capture: rd_dq matches DRAM data
+PASS T8: d capture: rd_dm matches DRAM DM
+PASS T8: ta_valid de-asserted after pulse
+PASS T9: s_oe=1 (DQS driven for leveling)
+PASS T9:     WL mode: wl_done=0 initially
+PASS T9: ode: wl_done=1 after calibration
+PASS T9: _done=0 after wl_mode deasserted
+PASS T9:            WL mode off: dqs_oe=0
+PASS T10: o-init: cs_n=1 (DRAM deselected)
+PASS T10:             reset+no-init: cke=0
+PASS T10: eset: ddr4_reset_n follows rst_n
+PASS T10: =1 no-init: cs_n=1 (init_done=0)
+PASS T10: t_done=1: cs_n=0 (DRAM selected)
+PASS T10:               init_done=1: cke=1
+--------------------------------------------
+phy_if_tb: 66 PASSED, 0 FAILED
+--------------------------------------------
+tb/phy_if_tb.v:507: $finish called at 516000 (1ps)
